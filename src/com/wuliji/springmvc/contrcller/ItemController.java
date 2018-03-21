@@ -76,4 +76,19 @@ public class ItemController {
 		
 	}
 	
+	@RequestMapping(value = "/deleteItem.action")
+	public ModelAndView deleteItem(Integer[] ids) {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("success");
+		return mav;
+	}
+	
+	@RequestMapping(value = "/updatesItem.action")
+	public ModelAndView updatesItem(QueryVo vo) {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("success");
+		return mav;
+	}
+	
+	
 }

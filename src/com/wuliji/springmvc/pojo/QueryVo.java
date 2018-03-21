@@ -1,10 +1,22 @@
 package com.wuliji.springmvc.pojo;
 
+import java.util.List;
+
 public class QueryVo {
 
 	
 	//商品
 	private Items items;
+	
+	private List<Items> itemsList;
+
+	public List<Items> getItemsList() {
+		return itemsList;
+	}
+
+	public void setItemsList(List<Items> itemsList) {
+		this.itemsList = itemsList;
+	}
 
 	public Items getItems() {
 		return items;
